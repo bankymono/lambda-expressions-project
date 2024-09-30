@@ -2,6 +2,13 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Animal animalOne = new Dog();
+
+        animalOne.makeSound("dog", "bark");
+
+        Animal animalTwo = (name, sound) -> System.out.println("I am a " + name + ". I " + sound);
+
+        animalTwo.makeSound("lion", "roar");
     }
 }
